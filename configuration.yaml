@@ -14,6 +14,7 @@ homeassistant:
   customize: !include customize.yaml
   whitelist_external_dirs:
     - /home/pi/snapshot  
+    - /var/
       
 # Show links to resources in log and frontend
 #introduction:
@@ -24,8 +25,6 @@ frontend:
   javascript_version: latest
 # Enables configuration UI
 config:
-
-recorder:
 
 #panel_iframe:
 #  configurator:
@@ -159,20 +158,7 @@ ios:
           - identifier: 'Close_Car_Porch_Gate'
             title: 'Close Car Porch Gate'   
         
-        #camera
-camera:
-  - platform: ffmpeg
-    input: -rtsp_transport tcp -i rtsp://192.168.88.246/ch0_0.h264
-    name: Play Area
-  - platform: ffmpeg
-    input: -rtsp_transport tcp -i rtsp://192.168.88.154/ch0_0.h264
-    name: Garage
-  - platform: ffmpeg
-    input: -rtsp_transport tcp -i rtsp://192.168.88.243/ch0_0.h264
-    name: Kitchen
-  - platform: local_file
-    file_path: /var/opt/homeassistant/tmp/image.jpg  
-
+        #camer
     
 #Google Assistance
     
@@ -214,3 +200,4 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 climate: !include climate.yaml
 sensor: !include sensors.yaml
+camera: !include camera.yaml

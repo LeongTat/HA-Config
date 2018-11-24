@@ -1,0 +1,23 @@
+  - platform: ffmpeg
+    input: -rtsp_transport tcp -i rtsp://192.168.88.246/ch0_0.h264
+    name: Play Area
+  - platform: ffmpeg
+    input: -rtsp_transport tcp -i rtsp://192.168.88.154/ch0_0.h264
+    name: Garage
+  - platform: ffmpeg
+    input: -rtsp_transport tcp -i rtsp://192.168.88.243/ch0_0.h264
+    name: Kitchen
+  - platform: local_file
+    file_path: /var/opt/homeassistant/tmp/image.jpg
+  - platform: local_file
+    file_path: /var/opt/homeassistant/www/snapshots/camera_doorbell.jpg
+    name: Garage_Doorbell
+  - platform: local_file
+    file_path: /var/opt/homeassistant/www/snapshots/camera_gate_snapshot.jpg
+    name: Garage_Gate
+  - platform: local_file
+    file_path: /var/opt/homeassistant/www/tensor/garage_latest.jpg
+    name: Tensor_Garage
+  - platform: local_file
+    file_path: /var/opt/homeassistant/www/tensor/play_area_latest.jpg
+    name: Tensor_Play_Area
