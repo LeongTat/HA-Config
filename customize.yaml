@@ -1,0 +1,154 @@
+sensor.broadlink_sensor_temperature:
+  friendly_name: LivingHall
+switch.switch2:
+  icon: mdi:fan
+  assumed_state: false
+  friendly_name: Fan
+switch.switch3:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: Light
+switch.switch6:
+  icon: mdi:fan
+  assumed_state: false
+  friendly_name: Fan
+switch.switch4:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: Light 1
+switch.switch5:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: Light 2
+switch.switch17:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: Small Light
+switch.switch7:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: Light
+switch.switch8:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: Front
+switch.switch9:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: Middle
+switch.switch10:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: Back
+switch.switch11:
+  icon: mdi:air-conditioner
+  assumed_state: false
+  friendly_name: Air-Con
+switch.switch12:
+  icon: mdi:television-classic
+switch.switch13:
+  icon: mdi:image-filter-vintage
+  friendly_name: Air Filter
+switch.switch101:
+  icon: mdi:image-filter-vintage
+  friendly_name: Air Filter
+switch.switch15:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: LED Light
+switch.switch1:
+  icon: mdi:lightbulb-outline
+  assumed_state: false
+  friendly_name: Light
+switch.switch16:
+  icon: mdi:fan
+  assumed_state: false
+  friendly_name: Fan
+switch.switch18:
+  icon: mdi:gate
+  friendly_name: 1 Way
+switch.switch19:
+  icon: mdi:gate
+  friendly_name: 2 Way
+binary_sensor.motion_sensor_158d00016572ce:
+  friendly_name: Motion
+sensor.temperature_158d0001c19b0f:
+  friendly_name: Temperature
+sensor.humidity_158d0001c19b0f:
+  friendly_name: Humidity
+  icon: mdi:water-percent
+binary_sensor.door_window_sensor_158d0001fa3274:
+  friendly_name: Auto Gate
+  icon: mdi:gate
+binary_sensor.motion_sensor_158d0001d46f8c:
+  friendly_name: Motion
+binary_sensor.door_window_sensor_158d000200b786:
+  friendly_name: Door
+  icon: mdi:door-open
+sensor.illumination_7811dcb211c2:
+  friendly_name: Illumination
+binary_sensor.door_window_sensor_158d0001fa327c:
+  friendly_name: Fridge Door
+  icon: mdi:fridge
+light.gateway_light_7811dcb211c2:
+  friendly_name: Gateway Light
+  icon: mdi:lightbulb-outline
+switch.switch22:
+  friendly_name: Sport Light
+  icon: mdi:spotlight-beam
+switch.switch21:
+  friendly_name: Car Porch
+  icon: mdi:ceiling-light
+switch.switch20:
+  friendly_name: Main Door
+  icon: mdi:lightbulb-outline
+switch.switch102:
+  icon: mdi:air-conditioner
+  friendly_name: Air-Con
+group.all_automations:
+  hidden: false
+sensor.temperature_158d00021011d9:
+  friendly_name: Fridge
+sensor.humidity_158d00021011d9:
+  friendly_name: Fridge Humidity
+  icon: mdi:water-percent
+sensor.temperature_158d00020ec28b:
+  friendly_name: Kitchen
+sensor.humidity_158d00020ec28b:
+  friendly_name: Kitchen Humidity
+  icon: mdi:water-percent
+sensor.illumination_158d0001e5476e:
+  friendly_name: Illumination
+binary_sensor.motion_sensor_158d0001e5476e:
+  friendly_name: Motion
+binary_sensor.motion_sensor_158d000204bfa9:
+  friendly_name: Toilet Motion
+sensor.illumination_158d000204bfa9:
+  friendly_name: Illumination
+binary_sensor.switch_158d00020163fb:
+  friendly_name: Bedroom
+binary_sensor.switch_158d0002243d03:
+  friendly_name: Living Room
+binary_sensor.switch_158d0001f41d8e:
+  friendly_name: Play Area
+switch.switch24:
+  assumed_state: false
+  icon: mdi:lightbulb-outline
+switch.switch25:
+  icon: mdi:fan
+  assumed_state: false
+  friendly_name: Fan
+switch.switch26:
+  assumed_state: false
+  icon: mdi:lightbulb-outline
+switch.switch23:
+  friendly_name: Toilet Light
+  icon: mdi:human-male-female
+weather.dark_sky:
+  friendly_name: Klang Weather
+binary_sensor.vibration_158d0002a22411:
+  device_class: vibration
+  friendly_name: Door Bell
+  icon: mdi:bell-ring-outline
+sensor.home_to_office:
+  icon: mdi:car-side
