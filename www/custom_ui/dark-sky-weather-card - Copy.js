@@ -69,7 +69,7 @@ class DarkSkyWeatherCard extends HTMLElement {
       'NNW',
       'N'
     ];
-    
+
     var forecastDate1 = new Date();
     forecastDate1.setDate(forecastDate1.getDate()+1);
     var forecastDate2 = new Date();
@@ -80,8 +80,8 @@ class DarkSkyWeatherCard extends HTMLElement {
     forecastDate4.setDate(forecastDate4.getDate()+4);
     var forecastDate5 = new Date();
     forecastDate5.setDate(forecastDate5.getDate()+5);
-    
-    
+
+
     const currentConditions = hass.states[this.config.entity_current_conditions].state;
     const humidity = hass.states[this.config.entity_humidity].state;
     const pressure = Math.round(hass.states[this.config.entity_pressure].state);
@@ -139,7 +139,7 @@ class DarkSkyWeatherCard extends HTMLElement {
   }
 
   setConfig(config) {
-    if (!config.entity_current_conditions || 
+    if (!config.entity_current_conditions ||
     		!config.entity_humidity ||
     		!config.entity_pressure ||
      		!config.entity_temperature ||

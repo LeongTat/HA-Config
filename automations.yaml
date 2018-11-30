@@ -4,7 +4,7 @@
   - event_data:
       click_type: hold
       entity_id: binary_sensor.switch_158d00020163fb
-    event_type: click
+    event_type: xiaomi_aqara.click
     platform: event
   condition: []
   action:
@@ -42,7 +42,7 @@
   - event_data:
       click_type: single
       entity_id: binary_sensor.switch_158d00020163fb
-    event_type: click
+    event_type: xiaomi_aqara.click
     platform: event
   condition: []
   action:
@@ -55,7 +55,7 @@
   - event_data:
       click_type: double
       entity_id: binary_sensor.switch_158d00020163fb
-    event_type: click
+    event_type: xiaomi_aqara.click
     platform: event
   condition: []
   action:
@@ -272,7 +272,16 @@
     from: 'on'
     platform: state
     to: 'off'
-- action:
+- id: '1532853811498'
+  alias: (PlayArea:Button) Turn on All
+  trigger:
+  - event_data:
+      click_type: single
+      entity_id: binary_sensor.switch_158d0001f41d8e
+    event_type: xiaomi_aqara.click
+    platform: event
+  condition: []
+  action:
   - data:
       entity_id: switch.switch6
     service: switch.turn_on
@@ -282,29 +291,29 @@
   - data:
       entity_id: switch.switch5
     service: switch.turn_on
-  alias: (PlayArea:Button) Turn on All
-  condition: []
-  id: '1532853811498'
-  trigger:
-  - event_data:
-      click_type: single
-      entity_id: binary_sensor.switch_158d0001f41d8e
-    event_type: click
-    platform: event
-- action:
-  - data:
-      entity_id: group.playarea
-    service: switch.turn_off
+- id: '1532854124102'
   alias: (PlayArea:Button) Turn Off All
-  condition: []
-  id: '1532854124102'
   trigger:
   - event_data:
       click_type: hold
       entity_id: binary_sensor.switch_158d0001f41d8e
-    event_type: click
+    event_type: xiaomi_aqara.click
     platform: event
-- action:
+  condition: []
+  action:
+  - data:
+      entity_id: group.playarea
+    service: switch.turn_off
+- id: '1532854591550'
+  alias: (Living Room:Button) Turn off All
+  trigger:
+  - event_data:
+      click_type: hold
+      entity_id: binary_sensor.switch_158d0002243d03
+    event_type: xiaomi_aqara.click
+    platform: event
+  condition: []
+  action:
   - data:
       entity_id: switch.switch3
     service: switch.turn_off
@@ -317,44 +326,35 @@
   - data:
       entity_id: group.playarea
     service: switch.turn_off
-  alias: (Living Room:Button) Turn off All
-  condition: []
-  id: '1532854591550'
+- id: '1532854756234'
+  alias: (Living Room:Button) Turn on All
   trigger:
   - event_data:
-      click_type: hold
+      click_type: single
       entity_id: binary_sensor.switch_158d0002243d03
-    event_type: click
+    event_type: xiaomi_aqara.click
     platform: event
-- action:
+  condition: []
+  action:
   - data:
       entity_id: switch.switch3
     service: switch.turn_on
   - data:
       entity_id: switch.switch2
     service: switch.turn_on
-  alias: (Living Room:Button) Turn on All
-  condition: []
-  id: '1532854756234'
-  trigger:
-  - event_data:
-      click_type: single
-      entity_id: binary_sensor.switch_158d0002243d03
-    event_type: click
-    platform: event
-- action:
-  - data:
-      entity_id: switch.switch11
-    service: switch.turn_on
+- id: '1532855104881'
   alias: (Living Room:Button) Turn on AC
-  condition: []
-  id: '1532855104881'
   trigger:
   - event_data:
       click_type: double
       entity_id: binary_sensor.switch_158d0002243d03
-    event_type: click
+    event_type: xiaomi_aqara.click
     platform: event
+  condition: []
+  action:
+  - data:
+      entity_id: switch.switch11
+    service: switch.turn_on
 - action:
   - data:
       entity_id: switch.switch3

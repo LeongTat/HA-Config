@@ -91,6 +91,9 @@ media_player:
 cast:
   media_player:
   - host: 192.168.88.196
+  - host: 192.168.88.173
+
+shopping_list:
 
   
 #google_assistant:
@@ -185,6 +188,12 @@ google:
 calendar:  
   - platform: todoist
     token: !secret todoist_api 
+    
+recorder:
+  purge_interval: 2
+  purge_keep_days: 30
+  db_url: mysql://hass:hass@192.168.88.247:3307/homeassistant?charset=utf8
+
   
 #custom_updater:
 #  card_urls:
