@@ -152,3 +152,9 @@ binary_sensor.vibration_158d0002a22411:
   icon: mdi:bell-ring-outline
 sensor.home_to_office:
   icon: mdi:car-side
+switch.switch27:
+  icon: mdi:fan
+switch.switch28:
+  icon: mdi:fan
+variable.last_motion:
+  icon: mdi:bell

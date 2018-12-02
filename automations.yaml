@@ -412,3 +412,11 @@
       message: Check Who’s Here
       title: 'Alert: Door Bell Pressed!!!'
     service: notify.slack
+  - data:
+      variable: last_motion
+      attributes_template: "{\n  \"history_1\": \"{{ variable.state }}\",\n  \"history_2\"\
+        : \"{{ variable.attributes.history_1 }}\",\n  \"history_3\": \"{{ variable.attributes.history_2\
+        \ }}\"\n}\n"
+    data_template:
+      value: '{{now().strftime("%c")}}'
+    service: variable.set_variable

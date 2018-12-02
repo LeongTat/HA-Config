@@ -72,6 +72,14 @@ updater:
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
+variable:
+  last_motion:
+    value: 'unknown'
+    attributes:
+      friendly_name: 'Doorbell'
+      icon: mdi:alarm
+    restore: true
+
 xiaomi_aqara:
   discovery_retry: 10
   gateways:

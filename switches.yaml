@@ -106,6 +106,16 @@
         friendly_name: "Study Room Small Light"
         command_on: '6QpCAN8JFgkJFgkWCRYWCRYJFgkJFhYJFgkJFgkWCRYWCQkWFgkJFhYJFgkWCRYJFgkJFhYJCRYWCQkWCRYWCQkWFgkWCQ=='
         command_off: '6QpCAN8JFgkWCQkWCRYWCRYJCRYJFgkWFgkJFgkWCRYWCRYJCRYJFhYJFgkWCQkWCRYWCRYJFgkWCQkWCRYJFhYJFgkJFg=='
+      switch27:
+        friendly_name: "Kitchen Exhaust Fan"
+        command_on: '6QpCAN8JFgkJFhYJCRYWCQkWCRYJFhYJCRYWCQkWFgkJFgkWCRYJFhYJCRYJFhYJFgkJFhYJCRYJFhYJFgkWCQkWFgkWCQ=='
+        command_off: '6QpCAN8JFgkWCRYJFgkJFhYJFgkWCQkWCRYJFgkWCRYWCQkWCRYJFgkWCRYWCQkWFgkWCQkWFgkWCRYJCRYWCRYJFgkJFg=='
+      switch28:
+        friendly_name: "Laundry Exhaust Fan"
+        command_on: '6QpCAN8JFgkJFhYJCRYWCQkWCRYWCQkWFgkJFgkWCRYJFhYJFgkWCRYJFgkWCQkWFgkWCQkWCRYWCRYJCRYJFgkWFgkWCQ=='
+        command_off: '6QpCAN8JFgkWCQkWFgkWCRYJCRYWCQkWCRYJFhYJCRYWCQkWFgkWCQkWCRYWCQkWFgkJFgkWCRYJFhYJFgkJFgkWCRYWCQ=='
+
+        
         
   - platform: broadlink
     host: 192.168.88.181 
